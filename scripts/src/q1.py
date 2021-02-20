@@ -48,4 +48,5 @@ def uniao_arrays(A, B):
 if __name__ == '__main__':
     A = [5, 7, 8, 10, 15]
     B = [2, 5, 7, 9, 12]
-    uniao_arrays(A, B)
+    C = uniao_arrays(A, B)
+    print(C)
