@@ -11,8 +11,11 @@
 
 
 def sum_n(A, N):
+    # iterates over the array
     for i in range(len(A)):
+        # iterates over the numbers to the right
         for j in range(i + 1, len(A)):
+            # check if there's a sum which satisfies the given condition
             if A[i] + A[j] == N:
                 return True
     return False
@@ -24,7 +27,7 @@ if __name__ == '__main__':
     C = sum_n(A, N)
     print(C)
 
-    A = [3,4,6]
+    A = [3, 4, 6]
     N = 6
-    C = sum_n(A,N)
+    C = sum_n(A, N)
     print(C)

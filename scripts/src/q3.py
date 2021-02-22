@@ -14,8 +14,11 @@ import pandas as pd
 
 
 def top_three(A):
+    # converts array to a pandas series
     A_series = pd.Series(A)
+    # counts occurrences for all elements
     ranking = A_series.value_counts()
+    # returns the first three elements from the head of the series
     return print(ranking.head(3))
 
 
